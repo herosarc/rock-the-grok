@@ -1,0 +1,17 @@
+{
+  "name": "Rock the Grok",
+  "install": "echo 'Static site: no dependencies to install.'",
+  "terminals": [
+    {
+      "name": "static-server",
+      "command": "python3 -m http.server 8000",
+      "description": "Serves the static Rock the Grok site at http://localhost:8000. Open it to view the landing page; the Chief of Staff prompt loads from chief-prompt.txt over HTTP."
+    }
+  ],
+  "ports": [
+    {
+      "name": "Static site",
+      "port": 8000
+    }
+  ]
+}
